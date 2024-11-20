@@ -1,0 +1,48 @@
+/* Base Styles */
+:root {
+    --background-color: black;
+    --text-color: white;
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Media Queries */
+@media screen and (max-width: 320px) {
+    body {
+        background-color: red;
+    }
+}
+@media screen and (min-width: 320px){ /* Phones */
+    body {
+        background-color: orange;
+    }
+}
+@media screen and (min-width: 480px) { /* Small Tablets */
+    body {
+        background-color: yellow;
+    }
+}
+@media screen and (min-width: 768px) { /* Most Tablets */
+    body {
+        background-color: green;
+    }
+}
+@media screen and (min-width: 992px) { /* Laptops */
+    body {
+        background-color: blue;
+    }
+}
+@media screen and (min-width: 1200px) { /* Desktops */
+    body {
+        background-color: purple;
+    }
+}
+
+/* Extra Info */
+/* When using min-width, it will capture the stuff above that width if you're
+confused. For example, the second media query (320px) will apply styles to
+something that is between 320px and the next media query (480px). When using
+max-width, it will capture stuff below that width. For example, in the first
+query, it will capture the sizes below 320px.*/
